@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy birthday cutie💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Quicksand',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffd6e7,#ffeef5,#f8dfff);
+min-height:100vh;
+overflow-x:hidden;
+color:#ff4f81;
+}
+
+.header{
+text-align:center;
+padding:50px 20px 30px;
+animation:fadeDown 1.5s ease;
+}
+
+@keyframes fadeDown{
+from{opacity:0;transform:translateY(-30px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+.header h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.header p{
+font-size:1.1rem;
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+.hearts{
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+}
+
+.heart{
+position:absolute;
+font-size:22px;
+animation:floatHeart linear infinite;
+opacity:0.7;
+}
+
+@keyframes floatHeart{
+from{transform:translateY(100vh) scale(0.5);}
+to{transform:translateY(-120vh) scale(1.2);}
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:30px;
+max-width:1200px;
+margin:auto;
+}
+
+.frame{
+background:white;
+padding:12px;
+border-radius:25px;
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
+transition:0.4s;
+position:relative;
+overflow:hidden;
+}
+
+.frame:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+.frame::before{
+content:'🌸';
+position:absolute;
+top:10px;
+left:10px;
+font-size:22px;
+}
+
+.frame::after{
+content:'💖';
+position:absolute;
+bottom:10px;
+right:10px;
+font-size:20px;
+}
+
+.frame img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:18px;
+}
+
+.frame p{
+margin-top:12px;
+text-align:center;
+font-weight:600;
+}
+
+.letter-section{
+padding:50px 20px 80px;
+display:flex;
+justify-content:center;
+}
+
+.letter-box{
+background:white;
+max-width:750px;
+padding:40px;
+border-radius:35px;
+box-shadow:0 10px 35px rgba(0,0,0,0.15);
+position:relative;
+animation:fadeUp 1.5s ease;
+}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+.letter-box::before{
+content:'💌';
+position:absolute;
+top:-20px;
+left:40px;
+font-size:50px;
+background:#fff;
+border-radius:50%;
+padding:5px;
+}
+
+.letter-title{
+font-size:2rem;
+margin-bottom:25px;
+text-align:center;
+}
+
+.letter-text{
+font-size:1.1rem;
+line-height:2;
+color:#444;
+}
+
+.signature{
+margin-top:30px;
+text-align:right;
+font-size:1.2rem;
+font-weight:700;
+color:#ff4f81;
+}
+
+.button-area{
+text-align:center;
+padding-bottom:60px;
+}
+
+button{
+padding:15px 35px;
+border:none;
+border-radius:40px;
+background:#ff4f81;
+color:white;
+font-size:1rem;
+font-weight:700;
+cursor:pointer;
+transition:0.4s;
+box-shadow:0 8px 20px rgba(255,79,129,0.3);
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.confetti{
+position:absolute;
+width:12px;
+height:12px;
+top:-10px;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+100%{
+transform:translateY(110vh) rotate(720deg);
+opacity:0;
+}
+}
+
+@media(max-width:700px){
+.header h1{
+font-size:2.2rem;
+}
+
+.letter-box{
+padding:30px 20px;
+}
+
+.frame img{
+height:240px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<div class="header">
+<h1>🎂 Happy Birthday My Favorite Person 💖</h1>
+<p>
+A little website filled with memories, smiles and love just for you ✨
+</p>
+</div>
+
+<div class="gallery">
+
+<div class="frame">
+<img src="photo2.jpeg" alt="Bithday Person">
+<p>Your smile make you always cute 🌸</p>
+</div>
+
+<div class="frame">
+<img src="photo3.jpeg" alt="Special Day">
+<p>You are the only one person i met💕</p>
+</div>
+
+<div class="frame">
+<img src="photo4.jpeg" alt="Cutie pie">
+<p>Your are always shining✨</p>
+</div>
+
+<div class="frame">
+<img src="photo5.jpeg" alt="Dimple king">
+<p>Forever Special💖</p>
+</div>
+
+<div class="frame">
+<img src="photo6.jpeg" alt="Pookie🎀">
+<p>Beautiful Memories🌷</p>
+</div>
+
+<div class="frame">
+<img src="photo7.jpeg" alt="ONLY YOU">
+<p>Endless Happiness and you are very special🎀</p>
+</div>
+
+</div>
+
+<div class="letter-section">
+<div class="letter-box">
+
+<h2 class="letter-title">💌 A Cute Letter For You</h2>
+
+<p class="letter-text">
+Happy Birthday to someone truly precious 💖<br><br>
+
+You are one of the most beautiful parts of life and every memory with you feels special in its own way. Thank you for all the smiles, laughter, support and happiness you bring everywhere you go ✨<br><br>
+
+I hope this birthday becomes the beginning of your happiest chapter yet. May your days stay full of love, success, peace and endless cute moments 🌸<br><br>
+
+Never stop smiling because your smile genuinely makes the world brighter 🌷
+</p>
+
+<div class="signature">
+With Love 💕
+</div>
+
+</div>
+</div>
+
+<div class="button-area">
+<button onclick="startConfetti()">Celebrate Birthday 🎊</button>
+</div>
+
+<script>
+const hearts=document.getElementById('hearts');
+
+for(let i=0;i<35;i++){
+let heart=document.createElement('div');
+heart.classList.add('heart');
+heart.innerHTML='💖';
+heart.style.left=Math.random()*100+'vw';
+heart.style.animationDuration=(Math.random()*6+4)+'s';
+heart.style.fontSize=(Math.random()*20+15)+'px';
+hearts.appendChild(heart);
+}
+
+function startConfetti(){
+for(let i=0;i<180;i++){
+let confetti=document.createElement('div');
+confetti.classList.add('confetti');
+confetti.style.left=Math.random()*100+'vw';
+confetti.style.backgroundColor=`hsl(${Math.random()*360},100%,50%)`;
+confetti.style.animationDuration=(Math.random()*3+2)+'s';
+document.body.appendChild(confetti);
+
+setTimeout(()=>{
+confetti.remove();
+},5000);
+}
+}
+</script>
+
+</body>
+</html>
